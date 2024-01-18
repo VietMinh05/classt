@@ -1,0 +1,157 @@
+1.
+ 
+Display content of folder: ls
+
+-
+ 
+The ls (list) command displays everything inside a folder
+
+-
+ 
+ls -l: with the param -l, ls shows full details of your folders including permissions,
+
+date creation, owner etc.
+
+-
+ 
+ls -a: show hidden files and folders
+
+2.
+ 
+Navigation: cd
+
+-
+ 
+/: root or home folder
+
+-
+ 
+~: current user
+
+-
+ 
+.. : go to the parent folder
+
+-
+ 
+The cd (change directory) command takes you everywhere.
+
+-
+ 
+pwd: print the current working directory
+
+-
+ 
+Don’t forget the powerful key Tab: 1 Tab fills missing words you don’t have
+
+to type everything. 2 Tabs display all folders and files starting with that
+
+name.
+
+3.
+ 
+Create a folder: mkdir
+
+-
+ 
+We can even create a tree by using options: -p
+
+4.
+ 
+Copy a file or a folder: cp source destination
+
+-
+ 
+To copy a folder: -r (recursive) option must be used
+
+5.
+ 
+Move a file or a folder: mv source destination (change file name)
+
+6.
+ 
+Remove a file: rm
+
+-
+ 
+To remove a folder: rm -rf
+
+7.
+ 
+To clear the console to make it easier to view: clear
+
+8.
+ 
+To create a new file:
+ 
+touch filename.txt
+
+-
+ 
+We can create a file by using the command: nano, vi etc. nano is really easy to
+
+use and friendly. Not all versions of Linux support nano. You need to install it
+
+separately
+
+-
+ 
+Input some text to the file:
+ 
+echo “Some text” > filename.txt
+
+-
+ 
+Append more text to the file:
+ 
+echo “Some more text” >> filename.txt
+
+9.
+ 
+To view the content of a file: cat, more, less, tail, top etc.
+0 - none
+1 - execute
+2- write only
+3 - write and execute
+4 - read only
+5 - read and execute 
+6 - read and write 
+7 - read write execut
+Create a file named hello.txt:
+ 
+touch hello.txt
+
+-
+ 
+Run ls -l to see detailed permissions:
+ 
+ls -l
+
+-
+ 
+Set full permissions:
+ 
+chmod 777 hello.txt
+
+	1	Download MongoDB zip or gzip file:
+
+curl -O https://www.mongodb.com/try/download/community/mongodb-community-server-latest.tar.gz
+
+	2	Extract the downloaded archive to a local folder:
+tar -xzf mongodb-community-server-latest.tar.gz -C /Users/v111233/Downloads/
+	3	Set the $MONGO_HOME variable to point to the local folder:
+export MONGO_HOME=/Users/v111233/Downloads/mongodb
+
+
+
+
+
+
+Certainly! Here's a bash script that will print "Hello World" 1000 times:
+for ((i=1; i<=1000; i++))
+do
+    echo "Hello World"
+done
+
+bash hello_world.sh
+

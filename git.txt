@@ -1,0 +1,90 @@
+1. Create and Clone Repository:
+	•	Create the repo on GitHub:
+	◦	Log in to GitHub and create a new public repo named iit2022a_your_student_id.
+	◦	Copy the repo URL.
+	•	Clone the repo locally:Bash git clone https://github.com/your-username/iit2022a_your_student_id.git
+	•	  Vui lòng thận trọng khi sử dụng mã. Tìm hiểu thêm  content_copy   
+	◦	Replace https://github.com/your-username/iit2022a_your_student_id.git with the actual repo URL.
+2. Create File and Commit:
+Bash
+echo "All answers are very easy to find" > iit_answer.txt
+git add iit_answer.txt
+git commit -m "Add iit_answer.txt file"
+git push origin main
+Vui lòng thận trọng khi sử dụng mã. Tìm hiểu thêm
+
+content_copy
+
+
+3. Create and Merge Branch_easy:
+Bash
+git checkout -b branch_easy
+echo "All answers are easy to find" >> iit_answer.txt
+git add iit_answer.txt
+git commit -m "Update iit_answer.txt in branch_easy"
+git push origin branch_easy
+Vui lòng thận trọng khi sử dụng mã. Tìm hiểu thêm
+
+content_copy
+
+
+	•	Go to GitHub and create a pull request to merge branch_easy into main.
+	•	Merge the pull request.
+4. Create and Merge Branch_noteasy:
+Bash
+git checkout main
+git checkout -b branch_noteasy
+echo "All answers are not easy to find" >> iit_answer.txt
+git add iit_answer.txt
+git commit -m "Update iit_answer.txt in branch_noteasy"
+git push origin branch_noteasy
+Vui lòng thận trọng khi sử dụng mã. Tìm hiểu thêm
+
+content_copy
+
+
+	•	Create and merge a pull request for branch_noteasy like before.
+5. Create and Merge Branch_hard:
+Bash
+git checkout main
+git checkout -b branch_hard
+echo "All answers are hard to find" >> iit_answer.txt
+git add iit_answer.txt
+git commit -m "Update iit_answer.txt in branch_hard"
+git push origin branch_hard
+Vui lòng thận trọng khi sử dụng mã. Tìm hiểu thêm
+
+content_copy
+
+
+	•	Create and merge a pull request for branch_hard.
+6. List Commit History and Revert:
+Bash
+git log --oneline
+git revert <commit-hash-of-branch_easy-merge>
+git push origin main
+Vui lòng thận trọng khi sử dụng mã. Tìm hiểu thêm
+
+content_copy
+
+
+7. Update on GitHub:
+	•	Go to GitHub and manually edit iit_answer.txt as instructed.
+8. Conflicting Local Edit:
+Bash
+echo "Somes of the answers are very easy to find" > iit_answer.txt
+git add iit_answer.txt
+git commit -m "Local change to iit_answer.txt"
+git push origin main
+Vui lòng thận trọng khi sử dụng mã. Tìm hiểu thêm
+
+content_copy
+
+
+	•	This will result in a conflict due to changes on both local and remote.
+
+
+Correct Remote Configuration:
+	•	Set the correct remote: git remote set-url origin https://github.com/<username>/<correct-repo>.git
+	•	Verify: git remote -v
+
